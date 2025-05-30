@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPS.ATH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the APPS.ATH website, enhancing the dark mode theme */
+        body {
+            font-family: 'Inter', sans-serif; /* Sets 'Inter' as the default font */
+            background-color: #1E1E1E; /* Very dark background color, similar to Dropbox dark mode */
+            color: #F0F0F0; /* Light text color for contrast */
+        }
+        /* Styling for individual application cards */
+        .app-card {
+            background-color: #2D2D30; /* Darker background for the cards */
+            border: 1px solid #444444; /* Softer border for the cards */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+            transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
+        }
+        .app-card:hover {
+            transform: translateY(-5px); /* Lifts the card slightly on hover */
+        }
+        /* Styling for the download buttons within app cards */
+        .download-button {
+            background-color: #28A745; /* Standard green color */
+            color: white; /* White text for the button */
+            border-radius: 0.5rem; /* More rounded corners */
+            padding: 0.5rem 1.5rem; /* Padding inside the button */
+            display: inline-block; /* Ensures the anchor tag behaves like a button */
+            text-align: center; /* Centers the text within the button */
+            text-decoration: none; /* Removes underline from anchor tag */
+        }
+        /* Styling for navigation links */
+        .nav-link {
+            padding: 0.5rem 1rem; /* Padding around the link text */
+            border-radius: 0.5rem; /* Rounded corners for the link background */
+            transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+            color: #F0F0F0; /* Default text color for nav links */
+        }
+        .nav-link:hover {
+            background-color: #3E3E42; /* Background color on hover */
+            color: white; /* Text color on hover */
+        }
+        /* Styling for category cards */
+        .category-card {
+            background-color: #2D2D30; /* Background color for category cards */
+            border: 1px solid #444444; /* Border for category cards */
+            transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
+        }
+        .category-card:hover {
+            transform: translateY(-5px); /* Lifts the card slightly on hover */
+        }
+        /* Styling for the logo image */
+        .logo-image {
+            height: 32px; /* Tetapkan tinggi logo */
+            width: auto; /* Biarkan lebar menyesuaikan berdasarkan rasio aspek */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="bg-[#252526] shadow-lg py-5">
+        <div class="w-full flex flex-row items-center pl-[90px]">
+            <a href="Home.html" class="flex items-center">
+                <img src="apps.ath.png" alt="fileath" loading="lazy" 
+                     class="h-8 w-auto md:h-11 transition-all duration-200">
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-semibold mb-6 text-white">Aplikasi Terbaru</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+            <div class="app-card rounded-lg p-6 flex flex-col items-center text-center">
+                <img src="Image Software/PS.webp" onerror="this.onerror=null;this.src='https://placehold.co/100x100/3E3E42/F0F0F0?text=No+Image';" class="w-[100px] rounded-lg object-cover" alt="Photoshop CC 2025 Icon">
+                <h3 class="text-xl font-medium text-white mb-2">Photoshop CC 2025</h3>
+                <p class="text-gray-400 text-sm mb-4 min-h-[4rem]">Deskripsi singkat aplikasi ini. Ini adalah aplikasi yang sangat berguna.</p>
+                <a href="Photoshop.html" class="download-button hover:bg-[#1e7e34] transition duration-300">Unduh Sekarang</a>
+            </div>
+
+            <div class="app-card rounded-lg p-6 flex flex-col items-center text-center">
+                <img src="Image Software/Ai.webp" onerror="this.onerror=null;this.src='https://placehold.co/100x100/3E3E42/F0F0F0?text=No+Image';" class="w-[100px] rounded-lg object-cover" alt="Illustrator CC 2025 Icon">
+                <h3 class="text-xl font-medium text-white mb-2">Illustrator CC 2025</h3>
+                <p class="text-gray-400 text-sm mb-4 min-h-[4rem]">Aplikasi ini memiliki fitur-fitur canggih yang Anda butuhkan.</p>
+                <a href="Illustrator.html" class="download-button hover:bg-[#1e7e34] transition duration-300">Unduh Sekarang</a>
+            </div>
+
+            <div class="app-card rounded-lg p-6 flex flex-col items-center text-center">
+                <img src="Image Software/Pr.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/3E3E42/F0F0F0?text=No+Image';" class="w-[100px] rounded-lg object-cover" alt="Premiere Pro CC 2025 Icon">
+                <h3 class="text-xl font-medium text-white mb-2">Premiere Pro CC 2025</h3>
+                <p class="text-gray-400 text-sm mb-4 min-h-[4rem]">Tingkatkan produktivitas Anda dengan aplikasi ini.</p>
+                <a href="PremierePro.html" class="download-button hover:bg-[#1e7e34] transition duration-300">Unduh Sekarang</a>
+            </div>
+
+            <div class="app-card rounded-lg p-6 flex flex-col items-center text-center">
+                <img src="Image Software/Ae.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/3E3E42/F0F0F0?text=No+Image';" class="w-[100px] rounded-lg object-cover" alt="After Effect CC 2025 Icon">
+                <h3 class="text-xl font-medium text-white mb-2">After Effect CC 2025</h3>
+                <p class="text-gray-400 text-sm mb-4 min-h-[4rem]">Nikmati waktu luang Anda dengan game yang adiktif ini.</p>
+                <a href="AfterEffect.html" class="download-button hover:bg-[#1e7e34] transition duration-300">Unduh Sekarang</a>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-semibold mb-6 text-white">Jelajahi Kategori</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <a href="#" class="category-card rounded-lg p-4 text-center text-white hover:text-blue-400 transition duration-300">
+                <h3 class="text-lg font-medium">Adobe</h3>
+            </a>
+            <a href="#" class="category-card rounded-lg p-4 text-center text-white hover:text-blue-400 transition duration-300">
+                <h3 class="text-lg font-medium">JetBrains</h3>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-[#252526] py-6 mt-[185px] shadow-inner">
+        <div class="container mx-auto px-4 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 APPS.ATH Semua Hak Dilindungi.</p>
+            <p>Dibuat dengan ❤️ untuk tujuan demonstrasi.</p>
+        </div>
+    </footer>
+</body>
+</html>
