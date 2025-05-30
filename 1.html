@@ -15,7 +15,7 @@
         }
         /* Styling for the main content area */
         .content-section {
-            background-color: #242426; /* Darker background for content sections */
+            background-color: #2D2D30; /* Darker background for content sections */
             border: 1px solid #444444; /* Softer border */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
         }
@@ -36,10 +36,10 @@
         }
         /* Styling for secondary action buttons/links */
         .secondary-button {
-            background-color: #2b2b2b; /* Darker background for secondary buttons */
+            background-color: #2D2D30; /* Darker background for secondary buttons */
             color: #F0F0F0; /* Light text color */
-            border: 1px solid #363636; /* Border for definition */
-            border-radius: 0.5rem; /* Rounded corners */
+            border: 1px solid #444444; /* Border for definition */
+            border-radius: 1.1rem; /* Rounded corners */
             padding: 0.5rem 1rem; /* Padding */
             display: inline-flex; /* Allows icon and text alignment */
             align-items: center; /* Centers items vertically */
@@ -54,6 +54,9 @@
         .logo-image {
             height: 32px; /* custom tinggi logo */
             width: auto;  /* lebar otomatis */
+        }
+        .custom-radius {
+            border-radius: 30px !important; /* Example: 22px, adjust as needed */
         }
     </style>
 </head>
@@ -71,7 +74,7 @@
     <main class="container mx-auto px-4 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div class="lg:col-span-2">
-                <div class="content-section rounded-lg p-6 mb-8">
+                <div class="content-section custom-radius p-7 mb-8">
                     <div class="flex flex-col md:flex-row items-center md:items-start mb-6">
                         <img src="PS.webp" onerror="this.onerror=null;this.src='https://placehold.co/120x120/3E3E42/F0F0F0?text=PS';" class="w-24 h-24 md:w-32 md:h-32 rounded-lg object-cover mr-0 md:mr-6 mb-4 md:mb-0" alt="Adobe Photoshop CC Icon">
                         <div>
@@ -80,7 +83,7 @@
                         </div>
                     </div>
                     <div class="mb-6">
-                        <img src="Photoshop.jpg" alt="Screenshot Adobe Photoshop CC" class="w-full h-auto rounded-lg object-cover">
+                        <img src="Photoshop.jpg" alt="Screenshot Adobe Photoshop CC" class="w-full h-auto rounded-lg object-cover custom-radius">
                     </div>
                     <div class="flex flex-wrap gap-4 mb-8">
                         </div>
@@ -88,7 +91,7 @@
                     <h2 class="text-2xl font-semibold text-white mb-4">Deskripsi</h2>
                     <p class="text-gray-300 mb-6">Adobe Photoshop CC 2025 adalah perangkat lunak pengeditan gambar standar industri, menawarkan seperangkat alat yang komprehensif untuk desainer grafis, fotografer, dan seniman digital. Ini memungkinkan manipulasi foto tingkat lanjut, komposit, desain grafis, dan lukisan digital.</p>
                     <h2 class="text-2xl font-semibold text-white mb-4">Fitur Utama Adobe Photoshop CC</h2>
-                    <ul class="list-disc list-inside text-gray-300 mb-6">
+                    <ul class="list-disc list-inside text-gray-300 mb-10">
                         <li>Pengeditan dan retouching foto tingkat lanjut.</li>
                         <li>Pengeditan berbasis lapisan untuk alur kerja non-destruktif.</li>
                         <li>Alat seleksi ekstensif (Magic Wand, Lasso, Quick Selection, Pen Tool).</li>
@@ -104,7 +107,7 @@
             </div>
 
             <div class="lg:col-span-1">
-                <div class="content-section rounded-lg p-6">
+                <div class="content-section custom-radius p-6">
                     <h2 class="text-2xl font-semibold text-white mb-4">Informasi Aplikasi</h2>
                     <div class="space-y-4 text-gray-300">
                         <div>
@@ -149,7 +152,7 @@
                 <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
             <h2 class="text-xl font-semibold text-white mb-4">Previous versions</h2>
-            <div class="space-y-2 max-h-80 overflow-y-auto pr-2">
+            <div class="space-y-2 max-h-80 overflow-y-auto pr-2 ">
                 <div class="flex items-center justify-between text-gray-300 py-3 px-4 border border-gray-600 download-version-item transition-all duration-200 cursor-pointer hover:bg-gray-700 rounded-md" data-version="Photoshop 2025 (macOS Intel)" data-url="https://www.mediafire.com/file/95w3w046ghn3rjl/Adobe+Photoshop+2025+v26.7.0+(Intel+only)+%5BAdobe+Activation+Tool%5D.dmg/file">
                     <span>MacOS Intel</span>
                     </div>
